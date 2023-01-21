@@ -1,0 +1,3 @@
+/Users/calebnewman/Documents/FGCU/Spring 2023/COP3003/In Class Coding/cmake-build-debug/CMakeFiles/In_Class_Coding.dir
+/Users/calebnewman/Documents/FGCU/Spring 2023/COP3003/In Class Coding/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/calebnewman/Documents/FGCU/Spring 2023/COP3003/In Class Coding/cmake-build-debug/CMakeFiles/rebuild_cache.dir
