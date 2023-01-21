@@ -116,16 +116,16 @@ void printGrades(double grades[]) {
  * @param roundedAverage - rounded average of grades, excluding lowest
  */
 void printLetterGrade(double roundedAverage) {
-    if (roundedAverage > 90) {
+    if (roundedAverage >= 90) {
         std::cout << "Your final grade is: A" << std::endl;
     }
-    else if (roundedAverage > 80) {
+    else if (roundedAverage >= 80) {
         std::cout << "Your final grade is: B" << std::endl;
     }
-    else if (roundedAverage > 70) {
+    else if (roundedAverage >= 70) {
         std::cout << "Your final grade is: C" << std::endl;
     }
-    else if (roundedAverage > 60) {
+    else if (roundedAverage >= 60) {
         std::cout << "Your final grade is: D" << std::endl;
     }
     else {
