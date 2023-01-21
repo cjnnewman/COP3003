@@ -32,8 +32,6 @@ int main() {
     double gradesTotal;
     double placeholder;
 
-    std::cout << "f u github" << std::endl;
-
     // Get 11 grades input from user, populate array grades[]
     for (int i = 0; i < 11; i++) {
         std::cout << "Please enter 11 numeric grades, one at a time: ";
