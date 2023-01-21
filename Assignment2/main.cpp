@@ -26,7 +26,7 @@ void printLetterGrade(double roundedAverage);
 int main() {
     // variables
     double gradeInput;
-    double grades[10];
+    double grades[11];
     double lowestGrade = 100;
     double roundedAverage;
     double gradesTotal;
