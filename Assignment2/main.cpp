@@ -16,7 +16,7 @@ using std::trunc;
 
 // Function Declaration (Prototypes)
 //---------------------------------------------------------
-double calculateTotal(double grades[]);
+double calculateTotal(double *grades);
 double calculateRoundedAverage(double gradesTotal);
 void printGrades(double grades[]);
 void printLetterGrade(double roundedAverage);
@@ -76,7 +76,7 @@ int main() {
  * @param grades[] - array of grades
  * @return - the total of all grades, excluding lowest
  */
-double calculateTotal(double grades[]) {
+double calculateTotal(double *grades) {
     double gradesTotal = 0;
 
     for (int i = 1; i < 11; i++) {
