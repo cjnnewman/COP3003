@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/calebnewman/Documents/GitHub/COP3003/Assignment2/cmake-build-debug",
-		"source" : "/Users/calebnewman/Documents/GitHub/COP3003/Assignment2"
+		"build" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug",
+		"source" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator"
 	},
 	"version" : 
 	{

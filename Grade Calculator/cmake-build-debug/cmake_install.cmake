@@ -1,4 +1,4 @@
-# Install script for directory: /Users/calebnewman/Documents/GitHub/COP3003/Assignment2
+# Install script for directory: /Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/calebnewman/Documents/GitHub/COP3003/Assignment2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
