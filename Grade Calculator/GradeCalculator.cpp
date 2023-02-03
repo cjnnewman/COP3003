@@ -12,33 +12,34 @@
 #include <array>
 #include <cmath>
 
-double getAverage(std::array<double, 10>);
+double getAverage(std::array<double, 11>);
 double getGrade();
 void quitGrading(int);
 
 int main() {
-    std::array<double, 10> grades;
+    std::array<double, 11> grades;
     double lowestGrade;
     double userInput;
     double roundedAverage;
 
-    // Iterate 11 times to fill array
-    for (int i = 0; i <= grades.size(); i++) {
+    // Iterate 11 times to fill array by calling getGrade()
+    for (int i = 0; i < grades.size(); i++) {
         grades[i] = getGrade();
 
     }
 
+    // Sort the grades from lowest to highest so in order to
+    // drop the lowest in index 0.
     std::sort(grades.begin(), grades.end());
 
     // Output rounded grades to console
-    // Calculate total of grades in this loop as well
     std::cout << "\n\tRounded Grades: \n";
-    for (int i = 1; i <= grades.size(); i++) {
-        std::cout << "\t\tGrade " << (i+1) << " was: " << trunc(grades[i]) << "\n";
+    for (int i = 1; i < grades.size(); i++) {
+        std::cout << "\t\tGrade " << (i) << " was: " << trunc(grades[i]) << "\n";
     }
 
-    // Calculate the rounded average of grades
-    // roundedAverage = trunc(gradesTotal / 10);
+    // Call getAverage() and pass the array of grades to calculate
+    // the average.
     roundedAverage = getAverage(grades);
 
     // formatting
@@ -66,24 +67,18 @@ int main() {
     return 0;
 } // end main
 
-/*
-Refactor our portion getting grades to a new function called: get_grade
-Should take no parameters
-Will ask the user if they want to continue entering grades
-If not then pass 1 to quit_grading
-Will then ask for their grade
-Will validate the grade (is it between 0 and 100 when truncated)
-If its valid it will return it
-If its not it will run quit_grading with a -1
+/**
+ * Function to get each grade from the user and validate.
+ * @return - validated user input
  */
 double getGrade() {
-    char userContinue;
+    std::string userContinue;
     double userInput;
 
     std::cout << "Would you like to continue entering grades? (y for yes, n for no): ";
     std::cin >> userContinue;
 
-    while (userContinue == 'y' || userContinue == 'Y') {
+    if (std::toupper(userContinue[0]) == 'Y') {
         std::cout << "Please enter a grade: ";
         std::cin >> userInput;
 
@@ -98,15 +93,13 @@ double getGrade() {
     }
 
     quitGrading(1);
+} // end getGrade()
 
-}
-/*
-Refactor average code to a function called get_average
-After all grades gotten (all 10)
-Call get_average passing the array as a parameter
-return the average for the passed array
+/**
+ * Function to calculate average of grades from passed array.
+ * @return - average of grades, rounded.
  */
-double getAverage(std::array<double, 10> grades) {
+double getAverage(std::array<double, 11> grades) {
     double total;
     double roundedAverage;
 
@@ -119,14 +112,10 @@ double getAverage(std::array<double, 10> grades) {
     return roundedAverage;
 } // end getAverage
 
-/*
-Create a brand new function: quit_grading (or quitGrading) use the naming style that fits your code
-Pass it a number (0, 1, -1) which it uses to determine why we are quitting
-Default should print "Thank you for using our product!"
-1 should print "Sorry you had to quit early. Thank you for using our product!"
--1 should print "An error occurred, please try again"
-Should quit the program after printing message
-*/
+/**
+ * Handles user quits, errors, and end of program.
+ * @param quitReason - Reason the quit is initiated.
+ */
 void quitGrading(int quitReason){
 
     switch(quitReason) {
