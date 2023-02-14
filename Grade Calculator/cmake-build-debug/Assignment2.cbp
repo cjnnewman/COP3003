@@ -86,6 +86,9 @@
 		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradefunctions.h">
 			<Option target="Assignment2"/>
 		</Unit>
+		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp">
+			<Option target="Assignment2"/>
+		</Unit>
 		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

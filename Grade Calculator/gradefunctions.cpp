@@ -1,68 +1,93 @@
-//---------------------------------------------------------
-// Date : Feb 1 2023
-// File : main.cpp
-// Class: COP 3003, Spring 2023
-// Devel: Caleb Newman
-// Desc : Calculate average of 11 grades, dropping the lowest
-// before calculation. Output the corresponding letter grade
-// based on the rounded average.
-// Version: 4
-//---------------------------------------------------------
-#include <iostream>
-#include <array>
-#include <cmath>
 #include "gradefunctions.h"
-#include <string>
 
-using std::string;
+std::string getStudentName() {
+    std::string studentName;
 
-struct Student {
-    int gradeLevel {};
-    string studentName {};
-    double finalGrade {};
-    char letterGrade {};
-};
+    std::cout << "Please enter your full name: ";
+    getline(std::cin, studentName);
 
-int main() {
-    std::array<double, 11> grades;
-    double lowestGrade;
+    return studentName;
+}
+
+std::string getGradeLevel() {
+    std::string gradeLevel;
+
+    std::cout << "Please enter your grade level: ";
+    getline(std::cin, gradeLevel);
+
+    return gradeLevel;
+}
+
+double getGrade() {
+    std::string userContinue;
     double userInput;
-    double roundedAverage;
-    Student student;
 
-    student.studentName = getStudentName();
-    student.gradeLevel = getGradeLevel();
+    std::cout << "Would you like to continue entering grades? (y for yes, n for no): ";
+    std::cin >> userContinue;
 
-    // Iterate 11 times to fill array by calling getGrade()
-    for (int i = 0; i < grades.size(); i++) {
-        grades[i] = getGrade();
+    if (std::toupper(userContinue[0]) == 'Y') {
+        std::cout << "Please enter a grade: ";
+        std::cin >> userInput;
 
+        while (userInput > 100 || userInput < 0 || std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore();
+            std::cout << "Invalid input, please enter a value between 0 and 100: ";
+            std::cin >> userInput;
+        }
+
+        return userInput;
     }
 
-    // Sort the grades from lowest to highest so in order to
-    // drop the lowest in index 0.
-    std::sort(grades.begin(), grades.end());
-
-    // Output rounded grades to console
-    std::cout << "\n\tRounded Grades: \n";
-    for (int i = 1; i < grades.size(); i++) {
-        std::cout << "\t\tGrade " << (i) << " was: " << trunc(grades[i]) << "\n";
-    }
-
-    // Call getAverage() and pass the array of grades to calculate
-    // the average.
-    student.finalGrade = getAverage(grades);
-    roundedAverage = student.finalGrade;
-
-    student.letterGrade = getLetterGrade(roundedAverage);
-
-    // formatting
-    std::cout << "\n";
-
-    std::cout << "Thank you " << student.studentName << ", your final grade for the semester is a " <<
-    student.letterGrade << " at " << student.finalGrade << "%" << std::endl;
-
-    quitGrading(0);
-
+    quitGrading(1);
     return 0;
-} // end main
+} // end getGrade()
+
+double getAverage(std::array<double, 11> grades) {
+    double total = 0;
+    double roundedAverage;
+
+    for (int i = 0; i < grades.size(); i++) {
+        total += grades[i];
+    }
+
+    roundedAverage = trunc(total/grades.size());
+
+    return roundedAverage;
+} // end getAverage
+
+char getLetterGrade(double roundedAverage) {
+    char letterGrade;
+
+    if (roundedAverage >= 90) {
+        letterGrade = 'A';
+    }
+    else if (roundedAverage >= 80) {
+        letterGrade = 'B';
+    }
+    else if (roundedAverage >= 70) {
+        letterGrade = 'C';
+    }
+    else if (roundedAverage >= 60) {
+        letterGrade = 'D';
+    }
+
+    return letterGrade;
+}
+
+void quitGrading(int quitReason){
+
+    switch(quitReason) {
+        case 0:
+            std::cout << "Thank you for using our product!" << std::endl;
+            exit(0);
+        case 1:
+            std::cout << "We're sorry you had to quit early. Thanks for using our product!" <<
+                      std::endl;
+            exit(0);
+        case -1:
+            std::cout << "An error occurred, please try again." << std::endl;
+            exit(0);
+    }
+} // end quitGrading
+

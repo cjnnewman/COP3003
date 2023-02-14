@@ -1,6 +1,5 @@
-CMakeFiles/Assignment2.dir/gradefunctions.cpp.o: \
-  /Users/calebnewman/Documents/GitHub/COP3003/Grade\ Calculator/gradefunctions.cpp \
-  /Users/calebnewman/Documents/GitHub/COP3003/Grade\ Calculator/gradefunctions.h \
+CMakeFiles/Assignment2.dir/main.cpp.o: \
+  /Users/calebnewman/Documents/GitHub/COP3003/Grade\ Calculator/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -419,4 +418,5 @@ CMakeFiles/Assignment2.dir/gradefunctions.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
+  /Users/calebnewman/Documents/GitHub/COP3003/Grade\ Calculator/gradefunctions.h
