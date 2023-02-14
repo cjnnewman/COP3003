@@ -129,29 +129,29 @@ Assignment2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/build
 .PHONY : Assignment2/fast
 
-GradeCalculator.o: GradeCalculator.cpp.o
-.PHONY : GradeCalculator.o
+gradefunctions.o: gradefunctions.cpp.o
+.PHONY : gradefunctions.o
 
 # target to build an object file
-GradeCalculator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/GradeCalculator.cpp.o
-.PHONY : GradeCalculator.cpp.o
+gradefunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.o
+.PHONY : gradefunctions.cpp.o
 
-GradeCalculator.i: GradeCalculator.cpp.i
-.PHONY : GradeCalculator.i
+gradefunctions.i: gradefunctions.cpp.i
+.PHONY : gradefunctions.i
 
 # target to preprocess a source file
-GradeCalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/GradeCalculator.cpp.i
-.PHONY : GradeCalculator.cpp.i
+gradefunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.i
+.PHONY : gradefunctions.cpp.i
 
-GradeCalculator.s: GradeCalculator.cpp.s
-.PHONY : GradeCalculator.s
+gradefunctions.s: gradefunctions.cpp.s
+.PHONY : gradefunctions.s
 
 # target to generate assembly for a file
-GradeCalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/GradeCalculator.cpp.s
-.PHONY : GradeCalculator.cpp.s
+gradefunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.s
+.PHONY : gradefunctions.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Assignment2"
-	@echo "... GradeCalculator.o"
-	@echo "... GradeCalculator.i"
-	@echo "... GradeCalculator.s"
+	@echo "... gradefunctions.o"
+	@echo "... gradefunctions.i"
+	@echo "... gradefunctions.s"
 .PHONY : help
 
 
