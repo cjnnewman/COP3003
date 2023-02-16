@@ -90,4 +90,3 @@ void quitGrading(int quitReason){
             exit(0);
     }
 } // end quitGrading
-

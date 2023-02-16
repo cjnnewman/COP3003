@@ -1,5 +1,6 @@
 #ifndef MAIN_CPP_GRADEFUNCTIONS_H
 #define MAIN_CPP_GRADEFUNCTIONS_H
+
 #include <iostream>
 #include <string>
 #include <array>
