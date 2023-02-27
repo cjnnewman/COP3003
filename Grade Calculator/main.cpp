@@ -3,38 +3,40 @@
 // File : main.cpp
 // Class: COP 3003, Spring 2023
 // Devel: Caleb Newman
-// Desc : Calculate average of 11 grades, dropping the lowest
-// before calculation. Output the corresponding letter grade
-// based on the rounded average.
-// Version: 5
+// Desc : Grade calculator program, takes input of grades
+// from a user and calculates an average grade and a letter
+// grade.
+// Version: 6
 //---------------------------------------------------------
 #include <iostream>
-#include "gradefunctions.h"
+#include "gradeFunctions.cpp"
+#include "student.cpp"
 
 int main() {
-    // Two fn to get student info
-    getStudentName();
-    getGradeLevel();
+    char userResponse;
 
-    // Prompt user for grades to fill the array
-    fillArray();
+    Student student1 = Student();
+    GradeFunctions testStudent = GradeFunctions();
 
-    // Sort the array, leaving lowest in index [0]
-    sortArray();
+    student1.setStudentName();
 
-    // Print 10 grades, sorted, to console
-    printGrades();
+    student1.printStudentInfo();
+    std::cout << "Is the above info correct? Y to continue, N to update: ";
+    std::cin >> userResponse;
+    if (std::toupper(userResponse) == 'N'){
+        student1.updateStudentInfo();
+        std::cout << "Thanks, info updated. Continuing ... \n\n";
+    }
+    else{
+        std::cout << "Continuing ... \n\n";
+    }
 
-    // Get rounded average and assign letter grade
-    getAverageAndLetterGrade();
+    testStudent.fillArray();
+    testStudent.sortArray();
+    testStudent.printGrades();
+    testStudent.getAverageAndLetterGrade();
+    testStudent.printStudentResults(student1.studentName);
 
-    // formatting
-    std::cout << "\n";
-
-    // Output name, final letter grade and percentage
-    printStudentResults();
-
-    quitGrading(0);
 
     return 0;
 } // end main

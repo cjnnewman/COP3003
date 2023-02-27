@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradefunctions.cpp">
-			<Option target="Assignment2"/>
-		</Unit>
-		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradefunctions.h">
+		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradeFunctions.cpp">
 			<Option target="Assignment2"/>
 		</Unit>
 		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp">
+			<Option target="Assignment2"/>
+		</Unit>
+		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/student.cpp">
 			<Option target="Assignment2"/>
 		</Unit>
 		<Unit filename="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/CMakeLists.txt">

@@ -129,29 +129,29 @@ Assignment2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/build
 .PHONY : Assignment2/fast
 
-gradefunctions.o: gradefunctions.cpp.o
-.PHONY : gradefunctions.o
+gradeFunctions.o: gradeFunctions.cpp.o
+.PHONY : gradeFunctions.o
 
 # target to build an object file
-gradefunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.o
-.PHONY : gradefunctions.cpp.o
+gradeFunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o
+.PHONY : gradeFunctions.cpp.o
 
-gradefunctions.i: gradefunctions.cpp.i
-.PHONY : gradefunctions.i
+gradeFunctions.i: gradeFunctions.cpp.i
+.PHONY : gradeFunctions.i
 
 # target to preprocess a source file
-gradefunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.i
-.PHONY : gradefunctions.cpp.i
+gradeFunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.i
+.PHONY : gradeFunctions.cpp.i
 
-gradefunctions.s: gradefunctions.cpp.s
-.PHONY : gradefunctions.s
+gradeFunctions.s: gradeFunctions.cpp.s
+.PHONY : gradeFunctions.s
 
 # target to generate assembly for a file
-gradefunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradefunctions.cpp.s
-.PHONY : gradefunctions.cpp.s
+gradeFunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.s
+.PHONY : gradeFunctions.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -177,6 +177,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+student.o: student.cpp.o
+.PHONY : student.o
+
+# target to build an object file
+student.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.o
+.PHONY : student.cpp.o
+
+student.i: student.cpp.i
+.PHONY : student.i
+
+# target to preprocess a source file
+student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.i
+.PHONY : student.cpp.i
+
+student.s: student.cpp.s
+.PHONY : student.s
+
+# target to generate assembly for a file
+student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.s
+.PHONY : student.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Assignment2"
-	@echo "... gradefunctions.o"
-	@echo "... gradefunctions.i"
-	@echo "... gradefunctions.s"
+	@echo "... gradeFunctions.o"
+	@echo "... gradeFunctions.i"
+	@echo "... gradeFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... student.o"
+	@echo "... student.i"
+	@echo "... student.s"
 .PHONY : help
 
 

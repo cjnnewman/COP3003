@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradefunctions.cpp" "CMakeFiles/Assignment2.dir/gradefunctions.cpp.o" "gcc" "CMakeFiles/Assignment2.dir/gradefunctions.cpp.o.d"
+  "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradeFunctions.cpp" "CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o" "gcc" "CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o.d"
   "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp" "CMakeFiles/Assignment2.dir/main.cpp.o" "gcc" "CMakeFiles/Assignment2.dir/main.cpp.o.d"
+  "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/student.cpp" "CMakeFiles/Assignment2.dir/student.cpp.o" "gcc" "CMakeFiles/Assignment2.dir/student.cpp.o.d"
   )
 
 # Targets to which this target links.
