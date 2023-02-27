@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Assignment2",
+					"name" : "GradeCalculator",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Assignment2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Assignment2-Debug-c596a4044d19863d85c7.json",
-					"name" : "Assignment2",
+					"id" : "GradeCalculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GradeCalculator-Debug-a873e65a3a5f9c573d06.json",
+					"name" : "GradeCalculator",
 					"projectIndex" : 0
 				}
 			]

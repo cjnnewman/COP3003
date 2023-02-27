@@ -77,6 +77,7 @@ public:
         for (int i = 1; i < grades.size(); i++) {
             std::cout << "\t\tGrade " << (i) << " was: " << trunc(grades[i]) << "\n";
         }
+        std::cout << "\n\n";
     }
 
 // Calculate average rounded grade and determine corresponding letter grade

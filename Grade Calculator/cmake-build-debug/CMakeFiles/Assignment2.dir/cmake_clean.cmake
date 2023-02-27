@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "Assignment2.pdb"
   "CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o"
   "CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o.d"
-  "CMakeFiles/Assignment2.dir/main.cpp.o"
-  "CMakeFiles/Assignment2.dir/main.cpp.o.d"
+  "CMakeFiles/Assignment2.dir/gradecalculator.cpp.o"
+  "CMakeFiles/Assignment2.dir/gradecalculator.cpp.o.d"
   "CMakeFiles/Assignment2.dir/student.cpp.o"
   "CMakeFiles/Assignment2.dir/student.cpp.o.d"
 )

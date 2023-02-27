@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Assignment2
+# Target rules for targets named GradeCalculator
 
 # Build rule for target.
-Assignment2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Assignment2
-.PHONY : Assignment2
+GradeCalculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GradeCalculator
+.PHONY : GradeCalculator
 
 # fast build rule for target.
-Assignment2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/build
-.PHONY : Assignment2/fast
+GradeCalculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/build
+.PHONY : GradeCalculator/fast
 
 gradeFunctions.o: gradeFunctions.cpp.o
 .PHONY : gradeFunctions.o
 
 # target to build an object file
 gradeFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradeFunctions.cpp.o
 .PHONY : gradeFunctions.cpp.o
 
 gradeFunctions.i: gradeFunctions.cpp.i
@@ -142,7 +142,7 @@ gradeFunctions.i: gradeFunctions.cpp.i
 
 # target to preprocess a source file
 gradeFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradeFunctions.cpp.i
 .PHONY : gradeFunctions.cpp.i
 
 gradeFunctions.s: gradeFunctions.cpp.s
@@ -150,39 +150,39 @@ gradeFunctions.s: gradeFunctions.cpp.s
 
 # target to generate assembly for a file
 gradeFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/gradeFunctions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradeFunctions.cpp.s
 .PHONY : gradeFunctions.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+gradecalculator.o: gradecalculator.cpp.o
+.PHONY : gradecalculator.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/main.cpp.o
-.PHONY : main.cpp.o
+gradecalculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradecalculator.cpp.o
+.PHONY : gradecalculator.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+gradecalculator.i: gradecalculator.cpp.i
+.PHONY : gradecalculator.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/main.cpp.i
-.PHONY : main.cpp.i
+gradecalculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradecalculator.cpp.i
+.PHONY : gradecalculator.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+gradecalculator.s: gradecalculator.cpp.s
+.PHONY : gradecalculator.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/main.cpp.s
-.PHONY : main.cpp.s
+gradecalculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/gradecalculator.cpp.s
+.PHONY : gradecalculator.cpp.s
 
 student.o: student.cpp.o
 .PHONY : student.o
 
 # target to build an object file
 student.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/student.cpp.o
 .PHONY : student.cpp.o
 
 student.i: student.cpp.i
@@ -190,7 +190,7 @@ student.i: student.cpp.i
 
 # target to preprocess a source file
 student.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/student.cpp.i
 .PHONY : student.cpp.i
 
 student.s: student.cpp.s
@@ -198,7 +198,7 @@ student.s: student.cpp.s
 
 # target to generate assembly for a file
 student.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment2.dir/build.make CMakeFiles/Assignment2.dir/student.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GradeCalculator.dir/build.make CMakeFiles/GradeCalculator.dir/student.cpp.s
 .PHONY : student.cpp.s
 
 # Help Target
@@ -209,13 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Assignment2"
+	@echo "... GradeCalculator"
 	@echo "... gradeFunctions.o"
 	@echo "... gradeFunctions.i"
 	@echo "... gradeFunctions.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... gradecalculator.o"
+	@echo "... gradecalculator.i"
+	@echo "... gradecalculator.s"
 	@echo "... student.o"
 	@echo "... student.i"
 	@echo "... student.s"

@@ -69,19 +69,19 @@ include CMakeFiles/Assignment2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Assignment2.dir/flags.make
 
-CMakeFiles/Assignment2.dir/main.cpp.o: CMakeFiles/Assignment2.dir/flags.make
-CMakeFiles/Assignment2.dir/main.cpp.o: ../main.cpp
-CMakeFiles/Assignment2.dir/main.cpp.o: CMakeFiles/Assignment2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment2.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Assignment2.dir/main.cpp.o -MF CMakeFiles/Assignment2.dir/main.cpp.o.d -o CMakeFiles/Assignment2.dir/main.cpp.o -c "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp"
+CMakeFiles/Assignment2.dir/gradecalculator.cpp.o: CMakeFiles/Assignment2.dir/flags.make
+CMakeFiles/Assignment2.dir/gradecalculator.cpp.o: ../gradecalculator.cpp
+CMakeFiles/Assignment2.dir/gradecalculator.cpp.o: CMakeFiles/Assignment2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment2.dir/gradecalculator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Assignment2.dir/gradecalculator.cpp.o -MF CMakeFiles/Assignment2.dir/gradecalculator.cpp.o.d -o CMakeFiles/Assignment2.dir/gradecalculator.cpp.o -c "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradecalculator.cpp"
 
-CMakeFiles/Assignment2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment2.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp" > CMakeFiles/Assignment2.dir/main.cpp.i
+CMakeFiles/Assignment2.dir/gradecalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment2.dir/gradecalculator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradecalculator.cpp" > CMakeFiles/Assignment2.dir/gradecalculator.cpp.i
 
-CMakeFiles/Assignment2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment2.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/main.cpp" -o CMakeFiles/Assignment2.dir/main.cpp.s
+CMakeFiles/Assignment2.dir/gradecalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment2.dir/gradecalculator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/gradecalculator.cpp" -o CMakeFiles/Assignment2.dir/gradecalculator.cpp.s
 
 CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o: CMakeFiles/Assignment2.dir/flags.make
 CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o: ../gradeFunctions.cpp
@@ -113,14 +113,14 @@ CMakeFiles/Assignment2.dir/student.cpp.s: cmake_force
 
 # Object files for target Assignment2
 Assignment2_OBJECTS = \
-"CMakeFiles/Assignment2.dir/main.cpp.o" \
+"CMakeFiles/Assignment2.dir/gradecalculator.cpp.o" \
 "CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o" \
 "CMakeFiles/Assignment2.dir/student.cpp.o"
 
 # External object files for target Assignment2
 Assignment2_EXTERNAL_OBJECTS =
 
-Assignment2: CMakeFiles/Assignment2.dir/main.cpp.o
+Assignment2: CMakeFiles/Assignment2.dir/gradecalculator.cpp.o
 Assignment2: CMakeFiles/Assignment2.dir/gradeFunctions.cpp.o
 Assignment2: CMakeFiles/Assignment2.dir/student.cpp.o
 Assignment2: CMakeFiles/Assignment2.dir/build.make

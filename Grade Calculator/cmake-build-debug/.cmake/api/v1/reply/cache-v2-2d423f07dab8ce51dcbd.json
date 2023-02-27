@@ -935,7 +935,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Assignment2"
+			"value" : "GradeCalculator"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1216,6 +1216,78 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "GradeCalculator_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug"
+		},
+		{
+			"name" : "GradeCalculator_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "GradeCalculator_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator"
+		},
+		{
+			"name" : "Grade_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator/cmake-build-debug"
+		},
+		{
+			"name" : "Grade_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Grade_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/calebnewman/Documents/GitHub/COP3003/Grade Calculator"
 		},
 		{
 			"name" : "ProcessorCount_cmd_sysctl",
