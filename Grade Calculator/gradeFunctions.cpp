@@ -1,12 +1,12 @@
 //---------------------------------------------------------
-// Date : Feb 27 2023
+// Date : Mar 4 2023
 // File : gradeFunctions.cpp
 // Class: COP 3003, Spring 2023
 // Devel: Caleb Newman
 // Desc : This .cpp file contains the GradeFunctions class.
 // This class contains all the functions needed to fill the
 // grades array, sort it, and perform calculations.
-// Version: 6
+// Version: 7
 //---------------------------------------------------------
 #include <iostream>
 #include <array>
@@ -15,10 +15,9 @@
 
 class GradeFunctions {
 private:
-
-public:
     std::array<double, 11> grades;
 
+public:
     double finalGrade{};
     char studentLetterGrade{};
 
@@ -86,11 +85,11 @@ public:
         double calculatedRoundedAverage;
         char letterGrade;
 
-        for (int i = 0; i < grades.size(); i++) {
+        for (int i = 1; i < grades.size(); i++) {
             total += grades[i];
         }
 
-        calculatedRoundedAverage = trunc(total / grades.size());
+        calculatedRoundedAverage = trunc(total / (grades.size()-1));
 
         this->finalGrade = calculatedRoundedAverage;
 
