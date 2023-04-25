@@ -1,0 +1,12 @@
+# ninja log v5
+5	2086	1681844619106861000	CMakeFiles/File_Assignment.dir/BookFile.cpp.o	bcb1d5e0363bad18
+5	2089	1681844619110110706	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+286	325	1681771888269987144	File_Assignment	5ebedb22b4e66b7c
+4	315	1681844735538456135	CMakeFiles/File_Assignment.dir/BookFile.cpp.o	bcb1d5e0363bad18
+4	319	1681844735542972381	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+4	321	1681844781084516875	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+3	283	1681844823358818496	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+3	294	1681844880060306625	CMakeFiles/File_Assignment.dir/BookFile.cpp.o	bcb1d5e0363bad18
+4	296	1681844880062558332	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+4	269	1681845047875994153	CMakeFiles/File_Assignment.dir/main.cpp.o	d283fe59f569fe3
+269	306	1681845047914455119	File_Assignment	5ebedb22b4e66b7c
